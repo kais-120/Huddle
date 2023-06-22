@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    background:hsl(257, 40%, 49%) url('bg-desktop.svg');
+    background-size: 950px;
+    font-family: 'Poppins';
+    overflow-y: scroll;
+
+}
+.container{
+    padding: 40px;
+    height: calc(100vh - 200px);
+    width: calc(100% - 80px);
+    position: relative;
+}
+.part{
+    display: flex;
+    flex-direction: row;
+}
+/*debut de nav*/
+.nav img{
+    height: 40px;
+    width: 150px;
+}
+/*fin de nav*/
+
+/*debut de part-left*/
+.part-left img{
+    height: 400px;
+    width: 515px;
+    margin-top: 50px;
+}
+
+/*fin de part-left*/
+
+/*debut de part-right*/
+.part-right{
+    width: auto;
+    margin-left: 50px;
+    transform: translateY(37px);
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    display: block;
+    width: 400px;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+p{
+    display: block;
+    color: #ffffffc7;
+    width: 500px;
+}
+button{
+    height: 45px;
+    width: 180px;
+    border-radius: 35px;
+    border: none;
+    color: rgb(103, 75, 175);
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: black 0px 2px 10px -2px;
+    margin-bottom: 120px;
+}
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+/*fin de part-rightt*/
+.media{
+    display: flex;
+    margin-right: 10px;
+    justify-content: end;
+
+}
+.item{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    margin-right: 10px;
+    margin-bottom: 20px;
+
+}
+.item:hover{
+    color: hsl(300, 69%, 71%) ;
+    border: 2px solid hsl(300, 69%, 71%);
+}
+.item i{
+   font-size: 14px;
+}
+@media screen and (max-width: 375px) {
+    body{
+    background:hsl(257, 40%, 49%) url('bg-desktop.svg');
+    }
+    .part{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .part-right{
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        width: 300px;
+        height: 50px;
+    }
+    p{
+        width: 326px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    h2{
+        text-align: center;
+    }
+   
+}
